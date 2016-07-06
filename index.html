@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head lang="es">
+    <meta charset="UTF-8">
+    <title>Reloj</title>
+	<link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+<img src="images/banner.jpg" class="sombra">
+
+<div id="reloj">
+</div>
+
+ <script type="text/javascript">
+ 
+            contadorRegresivo( 5, 60) //  1 Minuto 60 Segundos
+            function contadorRegresivo( m, s)
+            {   
+            
+                var interval = setInterval(function(){
+                    if(s > 0) { s--; }
+                    else
+                    {
+                        if (m > 0)
+                        {
+                            m--;
+                            s = 59;
+                        } else
+                        {
+                         clearInterval(interval);
+                        }
+                            
+                    }
+                    document.getElementById('reloj').innerHTML = m+" minutos "+s+" segundos"
+                },1000);
+            }
+  
+        </script>
+
+</body>
+</html>

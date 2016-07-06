@@ -1,0 +1,15 @@
+
+#reloj {
+	
+	font-size: 20px;
+	width: 300px;
+	height: 40px;
+	margin-left: 83%;
+	margin-top: -180px;
+	
+} 
+.sombra{
+	border-radius: -webkit-box-shadow: -3px 9px 25px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 9px 25px -6px rgba(0,0,0,0.75);
+    box-shadow: -3px 9px 25px -6px rgba(0,0,0,0.75);
+}
